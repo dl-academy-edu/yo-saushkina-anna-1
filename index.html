@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <a class="header__logo" href="./index.html"><img class="header__img" src="./img/icons/dlk-logo.svg" alt="DLK logo" width="100" height="52"></a> 
         <nav class="header__nav">
             <ul class="header__list">
@@ -16,31 +20,32 @@
                 <li class="header__list-item"><a href="#" class="header__list-link">About Us</a></li>
             </ul>
         </nav>
-        <ul class="header__nav header__contact">
-            <li class="header__nav-item header__contact-search"><a href="#"></a></li>
-            <li class="header__nav-item header__contact-link"><a href="/pages/contact-us.html">Contact us</a></li>
+        <ul class="header__contact">
+            <li class="header__contact-search"><a href="#"></a></li>
+            <li class="header__contact-link"><a href="/pages/contact.html">Contact us</a></li>
         </ul>
     </header>
     <main>
-        <section class="the-ooh-noo-collection">
+        <section class="the-ooh-noo-collection container">
+            <h2 class="the-ooh-noo-collection__header">Slider</h2>
             <div class="the-ooh-noo-collection__slider">
                 <span class="the-ooh-noo-collection__slider-Num">01</span>
                 <ul class="the-ooh-noo-collection__slider-buttons">
-                    <li class="the-ooh-noo-collection__slider-buttons-switch"><button type="button"></button></li>
-                    <li class="the-ooh-noo-collection__slider-buttons-switch"><button type="button"></button></li>
-                    <li class="the-ooh-noo-collection__slider-buttons-switch"><button type="button"></button></li>
-                    <li class="the-ooh-noo-collection__slider-buttons-switch"><button type="button"></button></li>
+                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
+                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
+                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
+                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
                 </ul>
             </div>
             <div class="the-ooh-noo-collection__text">
                 <h1 class="the-ooh-noo-collection__text-title">THE OOH NOO COLLECTION</h1>
                 <p class="the-ooh-noo-collection__text-subtitle">Designed in Slovenia</p>
-                <a href="#" class="the-ooh-noo-collection__text-link">EXPLORE NOW</a>
+                <a href="#" class="the-ooh-noo-collection__text-link link-btn">EXPLORE NOW</a>
             </div>
-                <img class="the-ooh-noo-collection__text-img" src="./img/monster.png" alt="monster" width="636" height="489">
-            <p class="the-ooh-noo-collection__subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            <img class="the-ooh-noo-collection__text-img" src="./img/monster.png" alt="monster" width="636" height="489">
         </section>
-        <section class="categoryProducts">
+        <section class="categoryProducts container">
+            <p class="the-ooh-noo-collection__subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
             <h2 class="categoryProducts__header">Category Products</h2>
             <ul class="categoryProducts__list">
                 <li class="categoryProducts__item"><a class="categoryProducts__link" href="#">
@@ -62,103 +67,145 @@
                 <p class="categoryProducts__navigation-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
-        <section class="delivery">
-            <img class="delivery__img" src="./img/delivery-woman.jpg" alt="delivery woman">
-            <h2 class="delivery__header">Delivery</h2>
-            <ul class="delivery__menuList">
-                <li class="delivery__menuList-button"><a href="#">Delivery</a></li>
-                <li class="delivery__menuList-button"><a href="#">Guarantee</a></li>
-                <li class="delivery__menuList-button"><a href="#">Credit</a></li>
-            </ul>
-            <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <p class="delivery__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a class="delivery__link" href="#">LEARN MORE</a>
+        <section class="delivery container">
+            <img class="delivery__img" src="./img/delivery-woman.jpg" alt="delivery woman" width="480" height="559">
+            <div class="delivery__info">
+                <h2 class="delivery__header">Delivery</h2>
+                <ul class="delivery__menuList">
+                    <li><a class="delivery__menuList-button" href="#">Delivery</a></li>
+                    <li><a class="delivery__menuList-button" href="#">Guarantee</a></li>
+                    <li><a class="delivery__menuList-button" href="#">Credit</a></li>
+                </ul>
+                <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="delivery__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <a class="delivery__link link-btn" href="#">LEARN MORE</a>
+            </div>
         </section>
-        <section class="companies">
-            <ul class="companies__list">
-                <li class="companies__list-item"><a href="https://mail.ru/"><img class="companies__list-img" src="./img/mail-ru-group-logo.png" alt="mail.ru group" width="193" height="60"></a></li>
-                <li class="companies__list-item"><a href="https://www.apple.com/ru/"><img class="companies__list-img" src="./img/apple-logo.png" alt="apple" width="179" height="61"></a></li>
-                <li class="companies__list-item"><a href="https://eltex-co.ru/"><img class="companies__list-img" src="./img/eltex-logo.png" alt="eltex" width="216" height="46"></a></li>
-                <li class="companies__list-item"><a href="https://www.owox.com/"><img class="companies__list-img" src="./img/owox-logo.png" alt="owox" width="211" height="40"></a></li>
-            </ul>
-        </section>
-        <section class="infoDesignLifeKids">
-            <h2 class="infoDesignLifeKids__header">Design Life Kids</h2>
-            <p class="infoDesignLifeKids__subtitle">About Us</p>
-            <p class="desc">Some days i feel likeh i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <a href="#">buy now</a>
-        </section>
-        <article class="infoContacts">
-            <h2 class="infoContacts__header">contacts</h2>
-            <p class="infoContacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <iframe class="infoContacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.578999295751!2d-122.42927503519041!3d37.77646861983597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2z0KXQsNC50LXRgSDQktGN0LvQu9C4LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669031542473!5m2!1sru!2sru"
-            width="600" height="450" style="border:0;" allowfullscreen="" 
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </article>
+            <section class="companies container">
+                <h2 class="companies__header">Awards</h2>
+                <ul class="companies__list">
+                    <li class="companies__list-item"><a href="https://mail.ru/"><img class="companies__list-img" src="./img/mail-ru-group-logo.png" alt="mail.ru group" width="193" height="60"></a></li>
+                    <li class="companies__list-item"><a href="https://www.apple.com/ru/"><img class="companies__list-img" src="./img/apple-logo.png" alt="apple" width="179" height="61"></a></li>
+                    <li class="companies__list-item"><a href="https://eltex-co.ru/"><img class="companies__list-img" src="./img/eltex-logo.png" alt="eltex" width="216" height="46"></a></li>
+                    <li class="companies__list-item"><a href="https://www.owox.com/"><img class="companies__list-img" src="./img/owox-logo.png" alt="owox" width="211" height="40"></a></li>
+                </ul>
+            </section>
+        <div class="style container">
+            <section class="infoDesignLifeKids container">
+                <h2 class="infoDesignLifeKids__header">Design Life Kids</h2>
+                <p class="infoDesignLifeKids__subtitle">About Us</p>
+                <p class="desc">Some days i feel likeh i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <a class="link-btn" href="#">buy now</a>
+            </section>
+            <article class="infoContacts container">
+                <h2 class="infoContacts__header">contacts</h2>
+                <p class="infoContacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <iframe class="infoContacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.578999295751!2d-122.42927503519041!3d37.77646861983597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2z0KXQsNC50LXRgSDQktGN0LvQu9C4LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669031542473!5m2!1sru!2sru"
+                width="483" height="196" style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </div>
     </main>
 <footer class="footer">
-    <section class="footer__menuColumn">
-        <p class="footer__menuColumn-header">Navigation</p>
-        <ul class="footer__menuColumn-list">
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
-        </ul>
-    </section>
-    <section class="footer__menuColumn footer__customerInformationColumn">
-        <p class="footer__menuColumn-header">Customer Information</p>
-        <ul class="footer__menuColumn-list">
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
-            <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Search</a></li>
-        </ul>
-    </section>
-    <section class="footer__menuColumn footer__connectColumn">
-        <p class="footer__menuColumn-header footer__connectColumn">Connect</p>
-        <form class="footer__connectColumn-form" action="#">
-            <input class="footer__connectColumn-form-email" type="email" placeholder="email">
-            <button class="footer__connectColumn-form-button" type="submit">Join</button>
-        </form>
-        <ul class="footer__connectColumn-socialsList">
-            <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook"><a href="https://www.facebook.com/"></a></li>
-            <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter"><a href="https://twitter.com/"></a></li>
-            <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest"><a href="https://www.pinterest.com/"></a></li>
-            <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram"><a href="https://www.instagram.com/"></a></li>  
-        </ul>
-    </section>
-    <section class="footer__underBlock">
-        <fieldset class="footer__underBlock-ratingRow">
-            <legend class="footer__underBlock-ratingRow-header">Company Rating</legend>
-            <div class="footer__underBlock-ratingRow-group">
-                <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-1" value="1">
-                <label class="footer__underBlock-ratingRow-group-star" for="star-1" aria-label="Ужасно"></label>
+    <div class="style container">
+        <section class="footer__menuColumn">
+            <p class="footer__menuColumn-header">Navigation</p>
+            <ul class="footer__menuColumn-list">
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
+            </ul>
+        </section>
+        <section class="footer__menuColumn footer__customerInformationColumn">
+            <p class="footer__menuColumn-header">Customer Information</p>
+            <ul class="footer__menuColumn-list">
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Search</a></li>
+            </ul>
+        </section>
+        <section class="footer__menuColumn footer__connectColumn">
+            <p class="footer__menuColumn-header footer__connectColumn">Connect</p>
+            <form class="footer__connectColumn-form" action="#">
+                <input class="footer__connectColumn-form-email" type="email" placeholder="Email">
+                <button class="footer__connectColumn-form-button link-btn" type="submit">Join</button>
+            </form>
+            <ul class="footer__connectColumn-socialsList">
+                <li ><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook" href="https://www.facebook.com/"></a></li>
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter"><a href="https://twitter.com/"></a></li>
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest"><a href="https://www.pinterest.com/"></a></li>
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram"><a href="https://www.instagram.com/"></a></li>  
+            </ul>
+        </section>
+    </div>
+    <section class="footer__rating container">
+        <fieldset class="footer__rating-ratingRow">
+            <legend class="footer__rating-ratingRow-header" hidden>Company Rating</legend>
+            <p>Company Rating</p>
+            <div class="footer__rating-ratingRow-group">
+                <input class="hidden"  type="radio" name="star" id="star-1" value="1">
+                <label class="footer__rating-ratingRow-group-star" for="star-1" aria-label="Ужасно"></label>
 
-                <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-2"  value="2">
-                <label class="footer__underBlock-ratingRow-group-star" for="star-2" aria-label="Сносно"></label>
+                <input class="hidden" type="radio" name="star" id="star-2"  value="2">
+                <label class="footer__rating-ratingRow-group-star" for="star-2" aria-label="Сносно"></label>
 
-                <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-3"  value="3">
-                <label class="footer__underBlock-ratingRow-group-star" for="star-3" aria-label="Нормально"></label>
+                <input class="hidden" type="radio" name="star" id="star-3"  value="3">
+                <label class="footer__rating-ratingRow-group-star" for="star-3" aria-label="Нормально"></label>
 
-                <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-4"  value="4">
-                <label class="footer__underBlock-ratingRow-group-star" for="star-4" aria-label="Хорошо"></label>
+                <input class="hidden" type="radio" name="star" id="star-4"  value="4">
+                <label class="footer__rating-ratingRow-group-star" for="star-4" aria-label="Хорошо"></label>
 
-                <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-5"   value="5" checked>
-                <label class="footer__underBlock-ratingRow-group-star" for="star-5" aria-label="Отлично"></label>
+                <input class="hidden" type="radio" name="star" id="star-5"  value="5" checked>
+                <label class="footer__rating-ratingRow-group-star" for="star-5" aria-label="Отлично"></label>
             </div>
         </fieldset>
-        <div class="footer__underBlock-meta">
-            <p class="footer__underBlock-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-            <a class="footer__underBlock-meta-link" href="#">Web Design</a>
-            <p class="footer__underBlock-meta-text">— Direct Line Development</p>
+        <p class="footer__rating-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+        <div class="footer__rating-meta">
+            <a class="footer__rating-meta-link" href="#">Web Design</a>
+            <p class="footer__rating-meta-text">— Direct Line Development</p>
         </div>
     </section>
 </footer>
+<section class="contact" hidden>
+    <h1 class="contact__header">Contact Us</h1>
+    <form class="contact__form" method="post" action="#">
+        <div class="contact__form-input">
+            <div class="contact__form-input-labelWrapper">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Ivan Ivanov" name="name" id="name">
+            </div>
+            <div class="contact__form-input-rowTwo-input">
+                <div class="contact__form-input-rowTwo-input-labelWrapper">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="contact__form-input-labelWrapper">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+            <div class="contact__form-input-labelWrapper">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <label class="contact__form-checkbox" for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">By clicking on the button, you consent to the processing of your personal data
+        </label>
+        <button class="contact__form-btn" type="submit" aria-label="close contact">submit</button>
+    </form>
+    <div class="contactForm__text">
+        <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="contactForm__text-waitingToHelp">An expert is waiting to help you!</p>
+    </div>
+</section>
 </body>
 </html>
