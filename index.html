@@ -9,62 +9,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header class="header container">
         <a class="header__logo" href="./index.html"><img class="header__img" src="./img/icons/dlk-logo.svg" alt="DLK logo" width="100" height="52"></a> 
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__list-item"><a href="/pages/blog.html" class="header__list-link">Blog</a></li>
-                <li class="header__list-item"><a href="/pages/сatalog.html" class="header__list-link">Catalog</a></li>
-                <li class="header__list-item"><a href="#" class="header__list-link">About Us</a></li>
+                <li><a class="header__list-item" href="/pages/blog.html">Blog</a></li>
+                <li><a class="header__list-item" href="/pages/сatalog.html">Catalog</a></li>
+                <li><a class="header__list-item" href="#">About Us</a></li>
             </ul>
         </nav>
         <ul class="header__contact">
-            <li class="header__contact-search"><a href="#"></a></li>
-            <li class="header__contact-link"><a href="/pages/contact.html">Contact us</a></li>
+            <li><a class="header__contact-search" href="#"></a></li>
+            <li><a class="header__contact-link" href="/pages/contact.html">Contact us</a></li>
         </ul>
     </header>
     <main>
-        <section class="the-ooh-noo-collection container">
-            <h2 class="the-ooh-noo-collection__header">Slider</h2>
-            <div class="the-ooh-noo-collection__slider">
-                <span class="the-ooh-noo-collection__slider-Num">01</span>
-                <ul class="the-ooh-noo-collection__slider-buttons">
-                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
-                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
-                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
-                    <li><button class="the-ooh-noo-collection__slider-buttons-switch" type="button"></button></li>
-                </ul>
+        <section class="banner container">
+            <div class="banner__wrapper">
+                <h2 class="banner__header">Slider</h2>
+                <div class="banner__slider">
+                    <span class="banner__slider-Num">01</span>
+                    <ul class="slides">
+                        <li class="banner__slider-buttons-switch">
+                            <input type="radio" name="button" id="b1" checked>
+                        </li>
+                        <li class="banner__slider-buttons-switch">
+                            <input type="radio" name="button" id="b2"></li>
+                        <li class="banner__slider-buttons-switch">
+                            <input type="radio" name="button" id="b3"></li>
+                        <li class="banner__slider-buttons-switch">
+                            <input type="radio" name="button" id="b4"></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li><label class="bar" for="b1"></label></li>
+                        <li><label class="bar" for="b2"></label></li>
+                        <li ><label class="bar" for="b3"></label></li>
+                        <li><label class="bar" for="b4"></label></li>
+                    </ul>
+                </div>
+                <div class="banner__text">
+                    <h1 class="banner__text-title">THE OOH NOO COLLECTION</h1>
+                    <p class="banner__text-subtitle">Designed in Slovenia</p>
+                    <a href="#" class="banner__text-link link-btn">EXPLORE NOW</a>
+                </div>
+                <img class="banner__text-img" src="./img/monster.png" alt="monster" width="636" height="489">
             </div>
-            <div class="the-ooh-noo-collection__text">
-                <h1 class="the-ooh-noo-collection__text-title">THE OOH NOO COLLECTION</h1>
-                <p class="the-ooh-noo-collection__text-subtitle">Designed in Slovenia</p>
-                <a href="#" class="the-ooh-noo-collection__text-link link-btn">EXPLORE NOW</a>
-            </div>
-            <img class="the-ooh-noo-collection__text-img" src="./img/monster.png" alt="monster" width="636" height="489">
+            <p class="banner__subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
-        <section class="categoryProducts container">
-            <p class="the-ooh-noo-collection__subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-            <h2 class="categoryProducts__header">Category Products</h2>
-            <ul class="categoryProducts__list">
-                <li class="categoryProducts__item"><a class="categoryProducts__link" href="#">
-                    <img class="categoryProducts__item-img" src="./img/apparel-kids.jpg" alt="apparel kids" width="280" height="270">
-                    APPAREL KIDS</a></li>
-                <li class="categoryProducts__item"><a class="categoryProducts__link" href="#">
-                    <img class="categoryProducts__item-img"  src="./img/holiday-shop.jpg" alt="holiday shop" width="280" height="270">
-                    HOLIDAY SHOP</a></li>
-                <li class="categoryProducts__item"><a class="categoryProducts__link" href="#">
-                    <img class="categoryProducts__item-img" src="./img/toys.png" alt="toys" width="280" height="270">
-                    TOYS</a></li>
-                <li class="categoryProducts__item"><a class="categoryProducts__link" href="#">
-                    <img class="categoryProducts__item-img" src="./img/accessories.jpg" alt="accessories" width="280" height="270">
-                    ACCESSORIES</a></li>
+        <section class="category-products container">
+            <h2 class="category-products__header">Category Products</h2>
+            <ul class="category-products__list">
+                <li class="category-products__item" >
+                    <img class="category-products__item-img" src="./img/apparel-kids.jpg" alt="apparel kids" width="280" height="270">
+                    <a class="category-products__item-text" href="#">APPAREL KIDS</a>
+                </li>
+                <li class="category-products__item">
+                    <img class="category-products__item-img"  src="./img/holiday-shop.jpg" alt="holiday shop" width="280" height="270">
+                    <a class="category-products__item-text" href="#">HOLIDAY SHOP</a>
+                </li>
+                <li class="category-products__item">
+                    <img class="category-products__item-img" src="./img/toys.png" alt="toys" width="280" height="270">
+                    <a class="category-products__item-text" href="#">TOYS</a>
+                </li>
+                <li class="category-products__item" >
+                    <img class="category-products__item-img" src="./img/accessories.jpg" alt="accessories" width="280" height="270">
+                    <a class="category-products__item-text" href="#">ACCESSORIES</a>
+                </li>
             </ul>
-            <div class="categoryProducts__navigation">
-                <button class="categoryProducts__navigation-buttonLeft" type="button"></button>
-                <button class="categoryProducts__navigation-buttonRight" type="button"></button>
-                <p class="categoryProducts__navigation-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            <div class="category-products__navigation">
+                <button class="category-products__navigation-buttonLeft" type="button"></button>
+                <button class="category-products__navigation-buttonRight" type="button"></button>
+                <p class="category-products__navigation-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
         <section class="delivery container">
@@ -72,9 +90,9 @@
             <div class="delivery__info">
                 <h2 class="delivery__header">Delivery</h2>
                 <ul class="delivery__menuList">
-                    <li><a class="delivery__menuList-button" href="#">Delivery</a></li>
-                    <li><a class="delivery__menuList-button" href="#">Guarantee</a></li>
-                    <li><a class="delivery__menuList-button" href="#">Credit</a></li>
+                    <li class="size"><a class="delivery__menuList-button" href="#">Delivery</a></li>
+                    <li class="size"><a class="delivery__menuList-button" href="#">Guarantee</a></li>
+                    <li class="size"><a class="delivery__menuList-button" href="#">Credit</a></li>
                 </ul>
                 <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <p class="delivery__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
@@ -90,20 +108,20 @@
                     <li class="companies__list-item"><a href="https://www.owox.com/"><img class="companies__list-img" src="./img/owox-logo.png" alt="owox" width="211" height="40"></a></li>
                 </ul>
             </section>
-        <div class="style container">
-            <section class="infoDesignLifeKids container">
+        <div class="style container info">
+            <section class="infoDesignLifeKids">
                 <h2 class="infoDesignLifeKids__header">Design Life Kids</h2>
-                <p class="infoDesignLifeKids__subtitle">About Us</p>
-                <p class="desc">Some days i feel likeh i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <a class="link-btn" href="#">buy now</a>
+                    <p class="infoDesignLifeKids__subtitle">About Us</p>
+                    <p class="desc">Some days i feel likeh i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <a class="btn link-btn" href="#">buy now</a>
             </section>
-            <article class="infoContacts container">
-                <h2 class="infoContacts__header">contacts</h2>
-                <p class="infoContacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <iframe class="infoContacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.578999295751!2d-122.42927503519041!3d37.77646861983597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2z0KXQsNC50LXRgSDQktGN0LvQu9C4LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669031542473!5m2!1sru!2sru"
-                width="483" height="196" style="border:0;" allowfullscreen="" 
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <article class="infoContacts">
+                    <h2 class="infoContacts__header">contacts</h2>
+                    <p class="infoContacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <iframe class="infoContacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.578999295751!2d-122.42927503519041!3d37.77646861983597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2z0KXQsNC50LXRgSDQktGN0LvQu9C4LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669031542473!5m2!1sru!2sru"
+                    width="483" height="196" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
             </article>
         </div>
     </main>
@@ -138,42 +156,42 @@
                 <button class="footer__connectColumn-form-button link-btn" type="submit">Join</button>
             </form>
             <ul class="footer__connectColumn-socialsList">
-                <li ><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook" href="https://www.facebook.com/"></a></li>
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter"><a href="https://twitter.com/"></a></li>
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest"><a href="https://www.pinterest.com/"></a></li>
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram"><a href="https://www.instagram.com/"></a></li>  
+                <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook" href="https://www.facebook.com/"></a></li>
+                <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter" href="https://twitter.com/"></a></li>
+                <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest" href="https://www.pinterest.com/"></a></li>
+                <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram" href="https://www.instagram.com/"></a></li>  
             </ul>
         </section>
     </div>
     <section class="footer__rating container">
-        <fieldset class="footer__rating-ratingRow">
-            <legend class="footer__rating-ratingRow-header" hidden>Company Rating</legend>
-            <p>Company Rating</p>
-            <div class="footer__rating-ratingRow-group">
-                <input class="hidden"  type="radio" name="star" id="star-1" value="1">
-                <label class="footer__rating-ratingRow-group-star" for="star-1" aria-label="Ужасно"></label>
+        <fieldset class="footer__rating-ratingRow rating">
+            <legend class="legend" hidden>Company Rating</legend>
+            <p class="footer__rating-ratingRow-caption rating-caption">Company Rating</p>
+            <div class="footer__rating-ratingRow-group group">
+                <input class="input"  type="radio" name="star" id="star-1" value="1">
+                <label class="footer__rating-ratingRow-group-star star" for="star-1" aria-label="Ужасно"></label>
 
-                <input class="hidden" type="radio" name="star" id="star-2"  value="2">
-                <label class="footer__rating-ratingRow-group-star" for="star-2" aria-label="Сносно"></label>
+                <input class="input" type="radio" name="star" id="star-2"  value="2">
+                <label class="footer__rating-ratingRow-group-star star" for="star-2" aria-label="Сносно"></label>
 
-                <input class="hidden" type="radio" name="star" id="star-3"  value="3">
-                <label class="footer__rating-ratingRow-group-star" for="star-3" aria-label="Нормально"></label>
+                <input class="input"  type="radio" name="star" id="star-3"  value="3">
+                <label class="footer__rating-ratingRow-group-star star" for="star-3" aria-label="Нормально"></label>
 
-                <input class="hidden" type="radio" name="star" id="star-4"  value="4">
-                <label class="footer__rating-ratingRow-group-star" for="star-4" aria-label="Хорошо"></label>
+                <input class="input"  type="radio" name="star" id="star-4"  value="4">
+                <label class="footer__rating-ratingRow-group-star star" for="star-4" aria-label="Хорошо"></label>
 
-                <input class="hidden" type="radio" name="star" id="star-5"  value="5" checked>
-                <label class="footer__rating-ratingRow-group-star" for="star-5" aria-label="Отлично"></label>
+                <input class="input"  type="radio" name="star" id="star-5"  value="5" >
+                <label class="footer__rating-ratingRow-group-star star" for="star-5" aria-label="Отлично"></label>
             </div>
         </fieldset>
         <p class="footer__rating-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
         <div class="footer__rating-meta">
             <a class="footer__rating-meta-link" href="#">Web Design</a>
-            <p class="footer__rating-meta-text">— Direct Line Development</p>
+            <p class="footer__rating-meta-text"><span>—</span> Direct Line Development</p>
         </div>
     </section>
 </footer>
-<section class="contact" hidden>
+<section class="contact modal-window">
     <h1 class="contact__header">Contact Us</h1>
     <form class="contact__form" method="post" action="#">
         <div class="contact__form-input">
