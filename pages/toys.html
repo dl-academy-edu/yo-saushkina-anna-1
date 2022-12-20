@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/toys.css">
 </head>
 <body>
-    <header class="header">
-        <a class="header__logo" href="../index.html"><img class="header__img" src="../img/icons/dlk-logo.svg" alt="DLK logo" width="100" height="52"></a> 
+    <header class="header container">
+        <a class="header__logo" href="/index.html"><img class="header__img" src="../img/icons/dlk-logo.svg" alt="DLK logo" width="100" height="52"></a> 
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__list-item"><a href="/pages/blog.html" class="header__list-link">Blog</a></li>
-                <li class="header__list-item"><a href="/pages/сatalog.html" class="header__list-link">Catalog</a></li>
-                <li class="header__list-item"><a href="#" class="header__list-link">About Us</a></li>
+                <li><a class="header__list-item" href="/pages/blog.html">Blog</a></li>
+                <li><a class="header__list-item" href="/pages/сatalog.html">Catalog</a></li>
+                <li><a class="header__list-item" href="#">About Us</a></li>
             </ul>
         </nav>
-        <ul class="header__nav header__contact">
-            <li class="header__nav-item header__contact-search"><a href="#"></a></li>
-            <li class="header__nav-item header__contact-link"><a href="/pages/contact-us.html">Contact us</a></li>
+        <ul class="header__contact">
+            <li><a class="header__contact-search" href="#"></a></li>
+            <li><a class="header__contact-link" href="/pages/contact.html">Contact us</a></li>
         </ul>
     </header>
     <main>
-        <section class="breadcrumbs">
+        <section class="breadcrumbs container">
             <h2 class="breadcrumbs__header">Toy for kids</h2>
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__list-item"><a href="/index.html">Home</a></li>
@@ -31,25 +36,23 @@
             </ul>
         </section>
         <section class="options">
-            <form class="options__form" action="#" method="get">
-                <h3 class="options__form-header">Cost</h3>
+            <form class="options__form container" action="#" method="get">
+                <p class="options__form-header">Cost</p>
                 <label class="options__form-label" for="cost">0<input type="range" name="cost" id="cost" min="0" max="500" step="1" aria-orientation="horizontal">500</label>
-                <h3 class="options__form-header">Color</h3>
+                <p class="options__form-header">Color</p>
                 <ul class="options__form-list">
                     <li class="options__form-list-item"><label><input type="checkbox" value="yes">Black</label></li>
                     <li class="options__form-list-item"><label><input type="checkbox" value="yes">Blue</label></li>
                     <li class="options__form-list-item"><label><input type="checkbox" value="yes">Green</label></li>
                     <li class="options__form-list-item"><label><input type="checkbox" value="yes">White</label></li>
                 </ul>
-                <div class="options__delivery">
                     <fieldset class="options__delivery-fieldset">
-                        <h3 class="options__delivery-fieldset-header">Delivery</h3>
-                        <label class="options__delivery-fieldset-radioButton"><input type="radio" name="level">Free shipping</label>
+                        <p class="options__form-header">Delivery</p>
+                        <label class="options__delivery-fieldset-radioButton"><input class="input" type="radio" name="level">Free shipping</label>
                         <label class="options__delivery-fieldset-radioButton"><input type="radio" name="level">Fast shipping</label>
                     </fieldset>
-                </div>
                 <div class="options__amount">
-                    <h3 class="options__amount-header">Amount</h3>
+                    <p class="options__form-header">Amount</p>
                     <input class="options__amount-value" type="radio" name="level" value="0-5">
                     <input class="options__amount-value" type="radio" name="level" value="10-20">
                     <input class="options__amount-value" type="radio" name="level" value="20-50">
@@ -57,105 +60,118 @@
                 <button class="options__button" type="submit">Apply</button>
             </form>
         </section>
-        <section class="products">
+        <section class="products container">
             <ul class="products__list">
-                <li class="products__list-item"><a class="products__list-link" href="#">
+                <li class="products__list-item">
                     <img class="products__list-img" src="../img/sharky-bean-bag-chair-cover.jpg" alt="sharky bean bag chair cover" width="380" height="385">
-                    SHARKY BEAN BAG CHAIR COVER</a> 
+                    <a class="products__list-link" href="#"></a>
+                    <p class="products__list-header">SHARKY BEAN BAG CHAIR COVER</p> 
                     <p class="products__list-text">$60.00 USD</p></li>
-                <li class="products__list-item"><a class="products__list-link" href="#">
+                <li class="products__list-item">
                     <img class="products__list-img" src="../img/brass-deco-frames.jpg" alt="brass deco frames" width="380" height="385">
-                    BRASS DECO FRAMES</a>
+                    <a class="products__list-link" href="#"></a>
+                    <p class="products__list-header">BRASS DECO FRAMES</p>
                     <p class="products__list-text">$66.00 USD</p></li>
-                <li class="products__list-item"><a class="products__list-link" href="#">
+                <li class="products__list-item">
                     <img class="products__list-img" src="../img/cibo-full-apron.jpg" alt="cibo full apron" width="380" height="385">
-                    CIBO FULL APRON</a>
-                    <p class="products__list-img">$60.00 USD</p> </li>
-                <li class="products__list-item"><a class="products__list-link" href="#">
+                    <a class="products__list-link" href="#"></a>
+                    <p class="products__list-header">
+                        CIBO FULL APRON</p>
+                    <p class="products__list-text">$60.00 USD</p> </li>
+                <li class="products__list-item">
                     <img class="products__list-img" src="../img/gatcha-gatcha-gumball-machine.jpg" alt="gatcha gatcha gumball machine" width="380" height="385">
-                   GATCHA GATCHA GUMBALL MACHINE</a>
+                    <a class="products__list-link" href="#"></a>
+                   <p class="products__list-header">
+                    GATCHA GATCHA GUMBALL MACHINE</p>
                     <p class="products__list-text">$56.00 USD</p></li>
-                <li class="products__list-item"><a class="products__list-link" href="#">
+                <li class="products__list-item">
                     <img class="products__list-img" src="../img/christmas-advent-scented-candle.jpg" alt="christmas advent scented candle" width="380" height="385">
-                    CHRISTMAS ADVENT SCENTED CANDLE</a>
+                    <a class="products__list-link" href="#"></a>
+                    <p class="products__list-header">
+                        CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <p class="products__list-text">$29.00 USD</p></li>
-                <li class="products__list-item"><a class="products__list-link" href="#">
+                <li class="products__list-item">
                     <img class="products__list-img" src="../img/tangle-spinning-tea-light.jpg" alt="tangle spinning tea light" width="380" height="385">
-                    TANGLE SPINNING TEA LIGHT</a>
+                    <a class="products__list-link" href="#"></a>
+                    <p class="products__list-header">
+                        TANGLE SPINNING TEA LIGHT</p>
                     <p class="products__list-text">$56.00 USD</p></li>
             </ul>
-            <nav class="products__pagination">
+            <nav class="products__pagination container">
                 <button class="products__pagination-prevButton" type="button"></button>
                 <ul class="products__pagination-list">
-                    <li class="products__pagination-list-item"><a href="#">1</a></li>
-                    <li class="products__pagination-list-item"><a href="#">2</a></li>
-                    <li class="products__pagination-list-item"><a href="#">3</a></li>
-                    <li class="products__pagination-list-item"><a href="#">4</a></li>
+                    <li><a class="products__pagination-list-item" href="#">1</a></li>
+                    <li><a class="products__pagination-list-item" href="#">2</a></li>
+                    <li><a class="products__pagination-list-item" href="#">3</a></li>
+                    <li><a class="products__pagination-list-item" href="#">4</a></li>
                 </ul>
                 <button class="products__pagination-nextButton" type="button"></button>
             </nav>
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__menuColumn">
-            <p class="footer__menuColumn-header">Navigation</p>
-            <ul class="footer__menuColumn-list">
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
-            </ul>
-        </section>
-        <section class="footer__menuColumn footer__customerInformationColumn">
-            <p class="footer__menuColumn-header">Customer Information</p>
-            <ul class="footer__menuColumn-list">
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
-                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Search</a></li>
-            </ul>
-        </section>
-        <section class="footer__menuColumn footer__connectColumn">
-            <p class="footer__menuColumn-header footer__connectColumn">Connect</p>
-            <form class="footer__connectColumn-form" action="#">
-                <input class="footer__connectColumn-form-email" type="email" placeholder="email">
-                <button class="footer__connectColumn-form-button" type="submit">Join</button>
-            </form>
-            <ul class="footer__connectColumn-socialsList">
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook"><a href="https://www.facebook.com/"></a></li>
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter"><a href="https://twitter.com/"></a></li>
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest"><a href="https://www.pinterest.com/"></a></li>
-                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram"><a href="https://www.instagram.com/"></a></li>  
-            </ul>
-        </section>
-        <section class="footer__underBlock">
-            <fieldset class="footer__underBlock-ratingRow">
-                <legend class="footer__underBlock-ratingRow-header">Company Rating</legend>
-                <div class="footer__underBlock-ratingRow-group">
-                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-1" value="1">
-                    <label class="footer__underBlock-ratingRow-group-star" for="star-1" aria-label="Ужасно"></label>
+        <div class="style container">
+            <section class="footer__menuColumn">
+                <p class="footer__menuColumn-header">Navigation</p>
+                <ul class="footer__menuColumn-list">
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
+                </ul>
+            </section>
+            <section class="footer__menuColumn footer__customerInformationColumn">
+                <p class="footer__menuColumn-header">Customer Information</p>
+                <ul class="footer__menuColumn-list">
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
+                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Search</a></li>
+                </ul>
+            </section>
+            <section class="footer__menuColumn footer__connectColumn">
+                <p class="footer__menuColumn-header footer__connectColumn">Connect</p>
+                <form class="footer__connectColumn-form" action="#">
+                    <input class="footer__connectColumn-form-email" type="email" placeholder="Email">
+                    <button class="footer__connectColumn-form-button link-btn" type="submit">Join</button>
+                </form>
+                <ul class="footer__connectColumn-socialsList">
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook" href="https://www.facebook.com/"></a></li>
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter" href="https://twitter.com/"></a></li>
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest" href="https://www.pinterest.com/"></a></li>
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram" href="https://www.instagram.com/"></a></li>  
+                </ul>
+            </section>
+        </div>
+        <section class="footer__rating container">
+            <fieldset class="footer__rating-ratingRow rating">
+                <legend class="legend" hidden>Company Rating</legend>
+                <p class="footer__rating-ratingRow-caption rating-caption">Company Rating</p>
+                <div class="footer__rating-ratingRow-group group">
+                    <input class="input"  type="radio" name="star" id="star-1" value="1">
+                    <label class="footer__rating-ratingRow-group-star star" for="star-1" aria-label="Ужасно"></label>
     
-                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-2"  value="2">
-                    <label class="footer__underBlock-ratingRow-group-star" for="star-2" aria-label="Сносно"></label>
+                    <input class="input" type="radio" name="star" id="star-2"  value="2">
+                    <label class="footer__rating-ratingRow-group-star star" for="star-2" aria-label="Сносно"></label>
     
-                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-3"  value="3">
-                    <label class="footer__underBlock-ratingRow-group-star" for="star-3" aria-label="Нормально"></label>
+                    <input class="input"  type="radio" name="star" id="star-3"  value="3">
+                    <label class="footer__rating-ratingRow-group-star star" for="star-3" aria-label="Нормально"></label>
     
-                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-4"  value="4">
-                    <label class="footer__underBlock-ratingRow-group-star" for="star-4" aria-label="Хорошо"></label>
+                    <input class="input"  type="radio" name="star" id="star-4"  value="4">
+                    <label class="footer__rating-ratingRow-group-star star" for="star-4" aria-label="Хорошо"></label>
     
-                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-5"   value="5" checked>
-                    <label class="footer__underBlock-ratingRow-group-star" for="star-5" aria-label="Отлично"></label>
+                    <input class="input"  type="radio" name="star" id="star-5"  value="5" >
+                    <label class="footer__rating-ratingRow-group-star star" for="star-5" aria-label="Отлично"></label>
                 </div>
             </fieldset>
-            <div class="footer__underBlock-meta">
-                <p class="footer__underBlock-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-                <a class="footer__underBlock-meta-link" href="#">Web Design</a>
-                <p class="footer__underBlock-meta-text">— Direct Line Development</p>
+            <p class="footer__rating-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+            <div class="footer__rating-meta">
+                <a class="footer__rating-meta-link" href="#">Web Design</a>
+                <p class="footer__rating-meta-text"><span>—</span> Direct Line Development</p>
             </div>
         </section>
     </footer>
