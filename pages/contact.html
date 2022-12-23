@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="../index.html"><img class="header__img" src="../img/icons/dlk-logo.svg" alt="DLK logo" width="100" height="52"></a> 
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="/pages/blog.html" class="header__list-link">Blog</a></li>
+                <li class="header__list-item"><a href="/pages/сatalog.html" class="header__list-link">Catalog</a></li>
+                <li class="header__list-item"><a href="#" class="header__list-link">About Us</a></li>
+            </ul>
+        </nav>
+        <ul class="header__nav header__contact">
+            <li class="header__nav-item header__contact-search"><a href="#"></a></li>
+            <li class="header__nav-item header__contact-link"><a href="/pages/contact-us.html">Contact us</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <h2 class="breadcrumbs__header">Toy for kids</h2>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumbs__list-item"><a href="/pages/сatalog.html">Contact Us</a></li> 
+            </ul>
+        </section>
+        <section class="contact">
+            <h1 class="contact__header">Contact Us</h1>
+            <form class="contact__form" method="post" action="#">
+                <div class="contact__form-input">
+                    <div class="contact__form-input-labelWrapper">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Ivan Ivanov" name="name" id="name">
+                    </div>
+                    <div class="contact__form-input-rowTwo-input">
+                        <div class="contact__form-input-rowTwo-input-labelWrapper">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="contact__form-input-labelWrapper">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="contact__form-input-labelWrapper">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <label class="contact__form-checkbox" for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox">By clicking on the button, you consent to the processing of your personal data
+                </label>
+                <button class="contact__form-btn" type="submit">submit</button>
+            </form>
+            <div class="contactForm__text">
+                <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p class="contactForm__text-waitingToHelp">An expert is waiting to help you!</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__menuColumn">
+            <p class="footer__menuColumn-header">Navigation</p>
+            <ul class="footer__menuColumn-list">
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
+            </ul>
+        </section>
+        <section class="footer__menuColumn footer__customerInformationColumn">
+            <p class="footer__menuColumn-header">Customer Information</p>
+            <ul class="footer__menuColumn-list">
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
+                <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Search</a></li>
+            </ul>
+        </section>
+        <section class="footer__menuColumn footer__connectColumn">
+            <p class="footer__menuColumn-header footer__connectColumn">Connect</p>
+            <form class="footer__connectColumn-form" action="#">
+                <input class="footer__connectColumn-form-email" type="email" placeholder="email">
+                <button class="footer__connectColumn-form-button" type="submit">Join</button>
+            </form>
+            <ul class="footer__connectColumn-socialsList">
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook"><a href="https://www.facebook.com/"></a></li>
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter"><a href="https://twitter.com/"></a></li>
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest"><a href="https://www.pinterest.com/"></a></li>
+                <li class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram"><a href="https://www.instagram.com/"></a></li>  
+            </ul>
+        </section>
+        <section class="footer__underBlock">
+            <fieldset class="footer__underBlock-ratingRow">
+                <legend class="footer__underBlock-ratingRow-header">Company Rating</legend>
+                <div class="footer__underBlock-ratingRow-group">
+                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-1" value="1">
+                    <label class="footer__underBlock-ratingRow-group-star" for="star-1" aria-label="Ужасно"></label>
+    
+                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-2"  value="2">
+                    <label class="footer__underBlock-ratingRow-group-star" for="star-2" aria-label="Сносно"></label>
+    
+                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-3"  value="3">
+                    <label class="footer__underBlock-ratingRow-group-star" for="star-3" aria-label="Нормально"></label>
+    
+                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-4"  value="4">
+                    <label class="footer__underBlock-ratingRow-group-star" for="star-4" aria-label="Хорошо"></label>
+    
+                    <input class="footer__underBlock-ratingRow-group-star" type="radio" name="star" id="star-5"   value="5" checked>
+                    <label class="footer__underBlock-ratingRow-group-star" for="star-5" aria-label="Отлично"></label>
+                </div>
+            </fieldset>
+            <div class="footer__underBlock-meta">
+                <p class="footer__underBlock-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+                <a class="footer__underBlock-meta-link" href="#">Web Design</a>
+                <p class="footer__underBlock-meta-text">— Direct Line Development</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
