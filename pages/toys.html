@@ -30,33 +30,84 @@
         <section class="breadcrumbs container">
             <h2 class="breadcrumbs__header">Toy for kids</h2>
             <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__list-item"><a href="/index.html">Home</a></li>
-                <li class="breadcrumbs__list-item"><a href="/pages/сatalog.html">Catalog</a></li>
+                <li class="breadcrumbs__list-item arrow"><a href="/index.html">Home</a></li>
+                <li class="breadcrumbs__list-item arrow"><a href="/pages/сatalog.html">Catalog</a></li>
                 <li class="breadcrumbs__list-item"><a href="/pages/toys.html">Toys</a></li>
             </ul>
         </section>
         <section class="options">
             <form class="options__form container" action="#" method="get">
-                <p class="options__form-header">Cost</p>
-                <label class="options__form-label" for="cost">0<input type="range" name="cost" id="cost" min="0" max="500" step="1" aria-orientation="horizontal">500</label>
-                <p class="options__form-header">Color</p>
+                <fieldset class="range">
+                    <p class="options__header">Cost</p> 
+                    <input class="input__range" type="range" name="cost" id="cost" step="1" aria-orientation="horizontal" min="0" max="500" value="100">
+                    <label class="options__form-label" for="cost">
+                        <p>0</p>
+                        <p>500</p>
+                    </label>
+                </fieldset>
+                <fieldset class="color">
+                <p class="options__header">Color</p>
                 <ul class="options__form-list">
-                    <li class="options__form-list-item"><label><input type="checkbox" value="yes">Black</label></li>
-                    <li class="options__form-list-item"><label><input type="checkbox" value="yes">Blue</label></li>
-                    <li class="options__form-list-item"><label><input type="checkbox" value="yes">Green</label></li>
-                    <li class="options__form-list-item"><label><input type="checkbox" value="yes">White</label></li>
+                    <li class="options__form-list-item">
+                        <input class="check-input" type="checkbox" value="black" id="black" checked>
+                        <label class="check-label" for="black" >Black</label>
+                    </li>
+                    <li class="options__form-list-item">
+                        <input class="check-input" type="checkbox" value="blue" id="blue">
+                        <label class="check-label" for="blue" >
+                            Blue</label></li>
+                    <li class="options__form-list-item">
+                        <input class="check-input" type="checkbox" value="green" id="green">
+                        <label class="check-label" for="green" >
+                            Green</label>
+                    </li>
+                    <li class="options__form-list-item">
+                        <input class="check-input" type="checkbox" value="white" id="white">
+                        <label class="check-label" for="white">
+                            White</label>
+                    </li>
                 </ul>
-                    <fieldset class="options__delivery-fieldset">
-                        <p class="options__form-header">Delivery</p>
-                        <label class="options__delivery-fieldset-radioButton"><input class="input" type="radio" name="level">Free shipping</label>
-                        <label class="options__delivery-fieldset-radioButton"><input type="radio" name="level">Fast shipping</label>
-                    </fieldset>
-                <div class="options__amount">
-                    <p class="options__form-header">Amount</p>
-                    <input class="options__amount-value" type="radio" name="level" value="0-5">
-                    <input class="options__amount-value" type="radio" name="level" value="10-20">
-                    <input class="options__amount-value" type="radio" name="level" value="20-50">
-                </div>
+                </fieldset>
+                <fieldset class="options__delivery">
+                    <p class="options__header">Delivery</p>
+                    <ul >
+                        <li class="radio">
+                            <input class="options__radio" type="radio" name="level 1" value="1" id="free" >
+                            <label class="options__label" for="free">
+                                Free shipping
+                            </label>
+                        </li>
+                        <li>
+                            <input class="options__radio" type="radio" name="level 1" value="1" id="fast" checked>
+                            <label class="options__label" for="fast">
+                                Fast shipping
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="options__amount">
+                    <p class="options__header">Amount</p>
+                    <ul class="wrap">
+                        <li>
+                            <input class="amount-input" type="radio" name="level" value="0-5" id="first" checked>
+                            <label class="amount-label n" for="first">
+                                0-5
+                            </label>
+                        </li>
+                        <li>
+                            <input class="amount-input" type="radio" name="level" value="10-20"id="second">
+                            <label class="amount-label" for="second">
+                                10-20
+                            </label>
+                        </li>
+                        <li>
+                            <input class="amount-input" type="radio" name="level" value="20-50" id="third">
+                            <label class="amount-label" for="third">
+                                20-50
+                        </li>
+                        </label>
+                    </ul>
+                </fieldset>
                 <button class="options__button" type="submit">Apply</button>
             </form>
         </section>

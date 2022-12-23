@@ -33,20 +33,27 @@
 }
 
 .slides{
-    width: 32px;
-    height: 3px;
 }
 
-.banner__slider-buttons-switch {
+.slider-switch {
+    height: 14px;
+}
+
+.btn {
     background-color: #D6CAC2;
     cursor: pointer;
     width: 32px;
     height: 3px;
-    margin: 12px 0;
+    margin-top: 12px;
+    border: none;
 }
 
-.banner__slider-buttons-switch:checked {
-    background-color: #1E0606;
+.btn:hover {
+    background-color: #725F5B;
+}
+
+.btn:checked {
+    background-color: rgba(30, 6, 6, 0.6);
 }
 
 .navigation .bar {
@@ -348,7 +355,7 @@ input[name="button"] {
     padding-left: 30px;
 }
 
-.modal-window {
+/* .modal-window {
     display: none;
-}
+} */
 
