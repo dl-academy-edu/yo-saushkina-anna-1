@@ -6,7 +6,7 @@
 .banner__wrapper {
     display: flex;
     background-color: #EEE4DB;
-    margin-top:130px;
+    margin-top: 130px;
     height: 412px;
 }
 .banner__text-img {
@@ -16,8 +16,10 @@
     width: 636px;
     height: 489px;
 }
+
 .banner__slider {
     padding: 18px 44px 0 28px;
+
 }
 
 .banner__header {
@@ -33,28 +35,28 @@
 }
 
 .slides{
+    line-height: 12px;
+    padding-left: 2px;
 }
 
-.slider-switch {
-    height: 14px;
-}
 
-.btn {
+.switch {
     background-color: #D6CAC2;
-    cursor: pointer;
     width: 32px;
     height: 3px;
-    margin-top: 12px;
     border: none;
 }
 
-.btn:hover {
+.switch:hover {
+    cursor: pointer;
     background-color: #725F5B;
 }
 
-.btn:checked {
+.active,
+.switch:active {
     background-color: rgba(30, 6, 6, 0.6);
 }
+
 
 .navigation .bar {
     -webkit-transition: all 0.5s ease;
@@ -80,7 +82,7 @@ input[name="button"] {
     font-weight: 700;
     font-size: 40px;
     line-height: 110%;
-    padding: 90px 5px 20px 0;
+    padding: 90px 5px 18px 0;
 }
 
 .banner__text-subtitle{
@@ -89,19 +91,24 @@ input[name="button"] {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    padding-bottom: 20px; 
+    padding-bottom: 21px; 
 }
 
 .banner__subtitle {
     position: relative;
-    bottom: 44px;
-    font-weight: 700;
     text-align: center;
+    bottom: 42px;
+    font-weight: 700;
     color: #FFFFFF;
 
     background-color: #C29974;
-    padding:11px;
+    padding: 14px;
     z-index: 2;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
 }
 
 
@@ -170,11 +177,13 @@ input[name="button"] {
     width: 680px;
 }
 
+/* ___________________стрелки */
+
 .category-products__navigation-buttonLeft,
 .category-products__navigation-buttonRight {
     border: none;
     background-color: transparent;
-    padding: 0 6px 0 0; 
+    padding: 0 5px 0 0;
     margin: 0 0;
 }
 
@@ -194,6 +203,29 @@ input[name="button"] {
 .category-products__navigation-buttonLeft:before {
     background-image: url(../img/icons/blue-arrow-left.svg);
 }
+
+.category-products__navigation-buttonLeft:hover:before {
+    background-image: url(../img/icons/arrow-hover.svg);
+    transform: scaleX(-1);
+}
+
+.category-products__navigation-buttonLeft:active:before {
+    background-image: url(../img/icons/arrow-active.svg);
+    transform: scaleX(-1);
+}
+
+.category-products__navigation-buttonRight:before {
+    background-image: url(../img/icons/blue-arrow-right.svg);
+}
+
+.category-products__navigation-buttonRight:hover:before {
+    background-image: url(../img/icons/arrow-hover.svg);
+}
+
+.category-products__navigation-buttonRight:active:before {
+    background-image: url(../img/icons/arrow-active.svg);
+}
+
 .category-products__navigation-buttonRight:before{
     background-image: url(../img/icons/blue-arrow-right.svg);
 }
@@ -216,7 +248,7 @@ input[name="button"] {
 }
 .delivery__info {
     margin-left: 60px;
-    width: 560px;
+    width: 570px;
 }
 
 .delivery__header {
@@ -280,10 +312,16 @@ input[name="button"] {
     display: flex;
     justify-content: space-between;
     padding: 90px 0;
+    align-items: center;
 }
 
 
 /* infoDesignLifeKids */
+
+.info {
+    margin-top: 26px;
+}
+
 .infoDesignLifeKids {
     margin: 0 0;
     margin-right: 58px;
@@ -312,16 +350,17 @@ input[name="button"] {
     line-height: 34px;
     padding-bottom: 10px;
     padding-left: 30px;
+    padding-top: 10px;
 }
 
 .desc {
-    width: 484px;
+    width: 500px;
     margin: 0 0;
-    padding-bottom: 20px;
+    padding-bottom: 28px;
     padding-left: 30px;
 }
 
-.btn {
+.buy {
     margin-left: 30px;
 }
 
