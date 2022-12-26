@@ -32,52 +32,57 @@
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__list-item arrow"><a href="/index.html">Home</a></li>
                 <li class="breadcrumbs__list-item arrow"><a href="/pages/сatalog.html">Catalog</a></li>
-                <li class="breadcrumbs__list-item"><a href="/pages/toys.html">Toys</a></li>
+                <li class="breadcrumbs__list-item active-page"><a href="/pages/toys.html">Toys</a></li>
             </ul>
         </section>
         <section class="options">
+            <h2 class="visually-hidden">options</h2>
             <form class="options__form container" action="#" method="get">
                 <fieldset class="range">
-                    <p class="options__header">Cost</p> 
-                    <input class="input__range" type="range" name="cost" id="cost" step="1" aria-orientation="horizontal" min="0" max="500" value="100">
-                    <label class="options__form-label" for="cost">
-                        <p>0</p>
-                        <p>500</p>
+                    <label class="options__form-label options__header" for="cost">
+                        Cost
                     </label>
+                    <input class="input__range" type="range" name="cost" id="cost" step="10" aria-orientation="horizontal" min="0" max="500" value="100">
+                    <div class="num">
+                        <p class="min">0</p>
+                        <p class="max">500</p>
+                    </div>
                 </fieldset>
                 <fieldset class="color">
-                <p class="options__header">Color</p>
-                <ul class="options__form-list">
-                    <li class="options__form-list-item">
-                        <input class="check-input" type="checkbox" value="black" id="black" checked>
-                        <label class="check-label" for="black" >Black</label>
-                    </li>
-                    <li class="options__form-list-item">
-                        <input class="check-input" type="checkbox" value="blue" id="blue">
-                        <label class="check-label" for="blue" >
-                            Blue</label></li>
-                    <li class="options__form-list-item">
-                        <input class="check-input" type="checkbox" value="green" id="green">
-                        <label class="check-label" for="green" >
-                            Green</label>
-                    </li>
-                    <li class="options__form-list-item">
-                        <input class="check-input" type="checkbox" value="white" id="white">
-                        <label class="check-label" for="white">
-                            White</label>
-                    </li>
-                </ul>
+                    <legend class="options__header color-head">Color</legend>
+                    <ul class="options__form-list">
+                        <li class="item">
+                            <input class="checkbox__input" type="checkbox" value="black" id="black" name="color" checked>
+                            <label class="checkbox__label" for="black" id="checkbox">
+                                Black</label>
+                        </li>
+                        <li class="item">
+                            <input class="checkbox__input" type="checkbox" value="blue" id="blue" name="color">
+                            <label class="checkbox__label" for="blue">
+                                Blue</label>
+                        </li>
+                        <li class="item">
+                            <input class="checkbox__input" type="checkbox" value="green" id="green" name="color">
+                            <label class="checkbox__label" for="green">
+                                Green</label>
+                        </li>
+                        <li class="item">
+                            <input class="checkbox__input" type="checkbox" value="white" id="white" name="color">
+                            <label class="checkbox__label" for="white">
+                                White</label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="options__delivery">
                     <p class="options__header">Delivery</p>
                     <ul >
                         <li class="radio">
-                            <input class="options__radio" type="radio" name="level 1" value="1" id="free" >
+                            <input class="options__radio" type="radio" name="level 1" value="1" id="free">
                             <label class="options__label" for="free">
                                 Free shipping
                             </label>
                         </li>
-                        <li>
+                        <li class="radio">
                             <input class="options__radio" type="radio" name="level 1" value="1" id="fast" checked>
                             <label class="options__label" for="fast">
                                 Fast shipping
@@ -88,141 +93,175 @@
                 <fieldset class="options__amount">
                     <p class="options__header">Amount</p>
                     <ul class="wrap">
-                        <li>
+                        <li class="amount-bg">
                             <input class="amount-input" type="radio" name="level" value="0-5" id="first" checked>
-                            <label class="amount-label n" for="first">
+                            <label class="amount-label" for="first">
                                 0-5
                             </label>
                         </li>
-                        <li>
-                            <input class="amount-input" type="radio" name="level" value="10-20"id="second">
+                        <li class="amount-bg">
+                            <input class="amount-input" type="radio" name="level" value="10-20" id="second">
                             <label class="amount-label" for="second">
                                 10-20
                             </label>
                         </li>
-                        <li>
+                        <li class="amount-bg">
                             <input class="amount-input" type="radio" name="level" value="20-50" id="third">
                             <label class="amount-label" for="third">
                                 20-50
+                            </label>
                         </li>
-                        </label>
                     </ul>
                 </fieldset>
                 <button class="options__button" type="submit">Apply</button>
             </form>
         </section>
         <section class="products container">
+            <h2 class="visually-hidden">products</h2>
             <ul class="products__list">
                 <li class="products__list-item">
-                    <img class="products__list-img" src="../img/sharky-bean-bag-chair-cover.jpg" alt="sharky bean bag chair cover" width="380" height="385">
-                    <a class="products__list-link" href="#"></a>
-                    <p class="products__list-header">SHARKY BEAN BAG CHAIR COVER</p> 
-                    <p class="products__list-text">$60.00 USD</p></li>
+                    <a class="products__list-link" href="#">
+                        <img class="products__list-img" src="../img/sharky-bean-bag-chair-cover.jpg" alt="sharky bean bag chair cover" width="380" height="385">                    
+                        <p class="products__list-header">SHARKY BEAN BAG CHAIR COVER</p> 
+                        <p class="products__list-text">$60.00 USD</p>
+                    </a>
+                </li>
                 <li class="products__list-item">
-                    <img class="products__list-img" src="../img/brass-deco-frames.jpg" alt="brass deco frames" width="380" height="385">
-                    <a class="products__list-link" href="#"></a>
-                    <p class="products__list-header">BRASS DECO FRAMES</p>
-                    <p class="products__list-text">$66.00 USD</p></li>
+                    <a class="products__list-link" href="#">
+                        <img class="products__list-img" src="../img/brass-deco-frames.jpg" alt="brass deco frames" width="380" height="385">
+                        <p class="products__list-header">BRASS DECO FRAMES</p>
+                        <p class="products__list-text">$66.00 USD</p>
+                    </a>
+                </li>
                 <li class="products__list-item">
-                    <img class="products__list-img" src="../img/cibo-full-apron.jpg" alt="cibo full apron" width="380" height="385">
-                    <a class="products__list-link" href="#"></a>
-                    <p class="products__list-header">
-                        CIBO FULL APRON</p>
-                    <p class="products__list-text">$60.00 USD</p> </li>
+                    <a class="products__list-link" href="#">
+                        <img class="products__list-img" src="../img/cibo-full-apron.jpg" alt="cibo full apron" width="380" height="385">
+                        <p class="products__list-header">
+                            CIBO FULL APRON</p>
+                        <p class="products__list-text">$60.00 USD</p>
+                    </a>
+                    </li>
                 <li class="products__list-item">
-                    <img class="products__list-img" src="../img/gatcha-gatcha-gumball-machine.jpg" alt="gatcha gatcha gumball machine" width="380" height="385">
-                    <a class="products__list-link" href="#"></a>
-                   <p class="products__list-header">
-                    GATCHA GATCHA GUMBALL MACHINE</p>
-                    <p class="products__list-text">$56.00 USD</p></li>
+                    <a class="products__list-link" href="#">
+                        <img class="products__list-img" src="../img/gatcha-gatcha-gumball-machine.jpg" alt="gatcha gatcha gumball machine" width="380" height="385">
+                        <p class="products__list-header">
+                            GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="products__list-text">$56.00 USD</p>
+                    </a>
+                  </li>
                 <li class="products__list-item">
-                    <img class="products__list-img" src="../img/christmas-advent-scented-candle.jpg" alt="christmas advent scented candle" width="380" height="385">
-                    <a class="products__list-link" href="#"></a>
-                    <p class="products__list-header">
-                        CHRISTMAS ADVENT SCENTED CANDLE</p>
-                    <p class="products__list-text">$29.00 USD</p></li>
+                    <a class="products__list-link" href="#">
+                        <img class="products__list-img" src="../img/christmas-advent-scented-candle.jpg" alt="christmas advent scented candle" width="380" height="385">
+                        <p class="products__list-header">
+                            CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="products__list-text">$29.00 USD</p>
+                    </a>
+                 </li>
                 <li class="products__list-item">
-                    <img class="products__list-img" src="../img/tangle-spinning-tea-light.jpg" alt="tangle spinning tea light" width="380" height="385">
-                    <a class="products__list-link" href="#"></a>
-                    <p class="products__list-header">
-                        TANGLE SPINNING TEA LIGHT</p>
-                    <p class="products__list-text">$56.00 USD</p></li>
+                    <a class="products__list-link" href="#">
+                        <img class="products__list-img" src="../img/tangle-spinning-tea-light.jpg" alt="tangle spinning tea light" width="380" height="385">
+                        <p class="products__list-header">
+                            TANGLE SPINNING TEA LIGHT</p>
+                        <p class="products__list-text">$56.00 USD</p>
+                    </a>
+               </li>
             </ul>
-            <nav class="products__pagination container">
-                <button class="products__pagination-prevButton" type="button"></button>
-                <ul class="products__pagination-list">
-                    <li><a class="products__pagination-list-item" href="#">1</a></li>
-                    <li><a class="products__pagination-list-item" href="#">2</a></li>
-                    <li><a class="products__pagination-list-item" href="#">3</a></li>
-                    <li><a class="products__pagination-list-item" href="#">4</a></li>
+            <nav class="pagination container">
+                <button class="pagination-prevButton" type="button"></button>
+                <ul class="pagination-list">
+                    <li><button class="pagination-list-item active-pagination" type="button">1</button></li>
+                    <li><button class="pagination-list-item" type="button">2</button></li>
+                    <li><button class="pagination-list-item" type="button">3</button></li>
+                    <li><button class="pagination-list-item" type="button">4</button></li>
                 </ul>
-                <button class="products__pagination-nextButton" type="button"></button>
+                <button class="pagination-nextButton" type="button"></button>
             </nav>
         </section>
     </main>
     <footer class="footer">
         <div class="style container">
             <section class="footer__menuColumn">
+                <h2 class="visually-hidden">footer menu column</h2>
                 <p class="footer__menuColumn-header">Navigation</p>
                 <ul class="footer__menuColumn-list">
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">About Us</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Blog</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Design Services</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Featured On</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">2018 Holiday Catalog</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Shop By Designer</a></li>
                 </ul>
             </section>
-            <section class="footer__menuColumn footer__customerInformationColumn">
+            <section class="footer__menuColumn customer-info">
+                <h2 class="visually-hidden">customer info</h2>
                 <p class="footer__menuColumn-header">Customer Information</p>
                 <ul class="footer__menuColumn-list">
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
-                    <li class="footer__menuColumn-list-element"><a class="footer__menuColumn-list-link" href="#">Search</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Contact Us</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Sale Exclusions</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Shipping & Returns</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Terms & Conditions</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Privacy Policy</a></li>
+                    <li><a class="footer__menuColumn-list-link" href="#">Search</a></li>
                 </ul>
             </section>
-            <section class="footer__menuColumn footer__connectColumn">
-                <p class="footer__menuColumn-header footer__connectColumn">Connect</p>
+            <section class="footer__menuColumn connect">
+                <h2 class="visually-hidden">connect</h2>
+                <p class="footer__menuColumn-header">Connect</p>
                 <form class="footer__connectColumn-form" action="#">
                     <input class="footer__connectColumn-form-email" type="email" placeholder="Email">
-                    <button class="footer__connectColumn-form-button link-btn" type="submit">Join</button>
+                    <button class="link-btn" type="submit">Join</button>
                 </form>
                 <ul class="footer__connectColumn-socialsList">
-                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook" href="https://www.facebook.com/"></a></li>
-                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter" href="https://twitter.com/"></a></li>
-                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest" href="https://www.pinterest.com/"></a></li>
-                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram" href="https://www.instagram.com/"></a></li>  
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-facebook" href="https://www.facebook.com/">
+                        <svg class="c-icon" width="9" height="16" viewBox="0 0 9 16" fill="#ffffff"  xmlns="http://www.w3.org/2000/svg" id="facebook">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55271 3.36723H6.29671C6.03071 3.36723 5.73372 3.71723 5.73372 4.18523V5.81423H8.55271V8.13523H5.73372V15.1052H3.07071V8.13523H0.657715V5.81423H3.07071V4.44723C3.07071 2.48823 4.43171 0.894226 6.29671 0.894226H8.55271V3.36723Z" fill="white"/>
+                        </svg>
+                    </a></li>
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-twitter" href="https://twitter.com/">
+                        <svg width="15" height="13" viewBox="0 0 15 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1006 3.28909C13.1056 3.41609 13.1096 3.54309 13.1096 3.67209C13.1096 7.57609 10.1366 12.0781 4.70258 12.0781C3.03458 12.0781 1.48058 11.5881 0.173584 10.7501C0.406584 10.7771 0.641584 10.7911 0.879584 10.7911C2.26358 10.7911 3.53758 10.3181 4.54858 9.52509C3.25558 9.50209 2.16558 8.64809 1.78758 7.47509C1.96858 7.51009 2.15458 7.52709 2.34458 7.52709C2.61358 7.52709 2.87458 7.49209 3.12258 7.42409C1.77158 7.15209 0.751584 5.95909 0.751584 4.52709V4.49009C1.15058 4.71109 1.60758 4.84409 2.09158 4.85909C1.29858 4.33009 0.777584 3.42609 0.777584 2.40009C0.777584 1.85909 0.922584 1.35209 1.17658 0.916092C2.63258 2.70309 4.81058 3.87909 7.26558 4.00209C7.21558 3.78509 7.19058 3.56009 7.19058 3.32809C7.19058 1.69709 8.51258 0.375092 10.1446 0.375092C10.9936 0.375092 11.7616 0.732092 12.2996 1.30709C12.9736 1.17609 13.6056 0.930092 14.1766 0.590092C13.9556 1.28109 13.4886 1.85909 12.8766 2.22509C13.4746 2.15409 14.0446 1.99609 14.5756 1.76009C14.1776 2.35209 13.6776 2.87309 13.1006 3.28909Z" fill="white"/>
+                            </svg>
+                    </a></li>
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-pinterest" href="https://www.pinterest.com/">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00047 0C3.58252 0 0 3.58158 0 8.00047C0 11.2754 1.97001 14.0902 4.78956 15.3273C4.76698 14.7694 4.78579 14.0977 4.92785 13.49C5.08214 12.8408 5.95708 9.1313 5.95708 9.1313C5.95708 9.1313 5.70212 8.62045 5.70212 7.865C5.70212 6.6796 6.38984 5.79432 7.24502 5.79432C7.97225 5.79432 8.3241 6.34092 8.3241 6.99571C8.3241 7.7267 7.85747 8.82084 7.61757 9.83407C7.41718 10.6836 8.04281 11.3751 8.88011 11.3751C10.3957 11.3751 11.4165 9.42859 11.4165 7.12177C11.4165 5.36908 10.2358 4.05668 8.08796 4.05668C5.66167 4.05668 4.14982 5.86582 4.14982 7.88663C4.14982 8.5847 4.35491 9.07579 4.67666 9.45587C4.82531 9.6318 4.84506 9.70142 4.79144 9.90275C4.75381 10.0486 4.66537 10.4042 4.62868 10.5444C4.57506 10.7466 4.41136 10.82 4.22885 10.7448C3.11025 10.2885 2.58999 9.0645 2.58999 7.68813C2.58999 5.41612 4.50638 2.68972 8.30717 2.68972C11.3619 2.68972 13.3724 4.90151 13.3724 7.27324C13.3724 10.4117 11.6282 12.7562 9.05509 12.7562C8.19239 12.7562 7.37955 12.2895 7.10108 11.7599C7.10108 11.7599 6.63633 13.6029 6.53848 13.9585C6.36914 14.5747 6.03704 15.1919 5.73317 15.6717C6.45287 15.8843 7.21303 16 8.00047 16C12.4184 16 16 12.4184 16 8.00047C16 3.58158 12.4184 0 8.00047 0Z" fill="white"/>
+                            </svg>
+                    </a></li>
+                    <li><a class="footer__connectColumn-socialsList-item footer__connectColumn-socialsList-instagram" href="https://www.instagram.com/">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00003 0C5.82733 0 5.5549 0.0092 4.70163 0.0481333C3.8501 0.0869667 3.26857 0.222233 2.7597 0.42C2.23363 0.624433 1.7875 0.897967 1.3427 1.3427C0.897967 1.7875 0.624433 2.23363 0.42 2.7597C0.222233 3.26857 0.0869667 3.8501 0.0481333 4.7016C0.0092 5.5549 0 5.82733 0 8C0 10.1727 0.0092 10.4451 0.0481333 11.2984C0.0869667 12.1499 0.222233 12.7314 0.42 13.2403C0.624433 13.7664 0.897967 14.2125 1.3427 14.6573C1.7875 15.102 2.23363 15.3756 2.7597 15.58C3.26857 15.7778 3.8501 15.913 4.70163 15.9519C5.5549 15.9908 5.82733 16 8.00003 16C10.1727 16 10.4451 15.9908 11.2984 15.9519C12.1499 15.913 12.7314 15.7778 13.2403 15.58C13.7664 15.3756 14.2125 15.102 14.6573 14.6573C15.102 14.2125 15.3756 13.7664 15.58 13.2403C15.7778 12.7314 15.913 12.1499 15.9519 11.2984C15.9908 10.4451 16 10.1727 16 8C16 5.82733 15.9908 5.5549 15.9519 4.7016C15.913 3.8501 15.7778 3.26857 15.58 2.7597C15.3756 2.23363 15.102 1.7875 14.6573 1.3427C14.2125 0.897967 13.7664 0.624433 13.2403 0.42C12.7314 0.222233 12.1499 0.0869667 11.2984 0.0481333C10.4451 0.0092 10.1727 0 8.00003 0ZM8.00003 1.44143C10.1361 1.44143 10.3891 1.4496 11.2327 1.4881C12.0127 1.52367 12.4363 1.65397 12.7182 1.76353C13.0916 1.90867 13.3581 2.08203 13.638 2.362C13.918 2.6419 14.0913 2.9084 14.2365 3.28183C14.346 3.56373 14.4763 3.98733 14.5119 4.7673C14.5504 5.61087 14.5586 5.8639 14.5586 8C14.5586 10.1361 14.5504 10.3891 14.5119 11.2327C14.4763 12.0127 14.346 12.4363 14.2365 12.7182C14.0913 13.0916 13.918 13.3581 13.638 13.638C13.3581 13.918 13.0916 14.0913 12.7182 14.2365C12.4363 14.346 12.0127 14.4763 11.2327 14.5119C10.3892 14.5504 10.1363 14.5586 8.00003 14.5586C5.86373 14.5586 5.61077 14.5504 4.7673 14.5119C3.98733 14.4763 3.56373 14.346 3.28183 14.2365C2.9084 14.0913 2.64193 13.918 2.36197 13.638C2.08207 13.3581 1.90867 13.0916 1.76353 12.7182C1.65397 12.4363 1.52367 12.0127 1.4881 11.2327C1.4496 10.3891 1.44143 10.1361 1.44143 8C1.44143 5.8639 1.4496 5.61087 1.4881 4.7673C1.52367 3.98733 1.65397 3.56373 1.76353 3.28183C1.90867 2.9084 2.08203 2.6419 2.36197 2.362C2.64193 2.08203 2.9084 1.90867 3.28183 1.76353C3.56373 1.65397 3.98733 1.52367 4.7673 1.4881C5.61087 1.4496 5.8639 1.44143 8.00003 1.44143ZM3.8919 8C3.8919 5.73113 5.73113 3.8919 8.00003 3.8919C10.2689 3.8919 12.1081 5.73113 12.1081 8C12.1081 10.2689 10.2689 12.1081 8.00003 12.1081C5.73113 12.1081 3.8919 10.2689 3.8919 8ZM8.00003 10.6667C6.52723 10.6667 5.33333 9.47277 5.33333 8C5.33333 6.52723 6.52723 5.33333 8.00003 5.33333C9.47277 5.33333 10.6667 6.52723 10.6667 8C10.6667 9.47277 9.47277 10.6667 8.00003 10.6667ZM12.2704 4.68957C12.8006 4.68957 13.2304 4.2598 13.2304 3.7296C13.2304 3.1994 12.8006 2.76957 12.2704 2.76957C11.7402 2.76957 11.3104 3.1994 11.3104 3.7296C11.3104 4.2598 11.7402 4.68957 12.2704 4.68957Z" fill="white"/>
+                            </svg>
+                    </a></li>  
                 </ul>
             </section>
         </div>
         <section class="footer__rating container">
-            <fieldset class="footer__rating-ratingRow rating">
-                <legend class="legend" hidden>Company Rating</legend>
-                <p class="footer__rating-ratingRow-caption rating-caption">Company Rating</p>
-                <div class="footer__rating-ratingRow-group group">
-                    <input class="input"  type="radio" name="star" id="star-1" value="1">
-                    <label class="footer__rating-ratingRow-group-star star" for="star-1" aria-label="Ужасно"></label>
+            <h2 class="visually-hidden">rating</h2>
+            <form class="rating">
+                <fieldset>
+                    <legend class="visually-hidden">Company Rating</legend>
+                    <input  id="demo-5" type="radio" name="demo" value="5" class="rating-input" checked>
+                    <label for="demo-5" class="rating-label" aria-label="5 stars" title="5 stars">
+                        </label>
+                        
+                    <input  id="demo-4" type="radio" name="demo" value="4" class="rating-input">
+                    <label for="demo-4" class="rating-label" aria-label="4 stars" title="4 stars"></label>
     
-                    <input class="input" type="radio" name="star" id="star-2"  value="2">
-                    <label class="footer__rating-ratingRow-group-star star" for="star-2" aria-label="Сносно"></label>
-    
-                    <input class="input"  type="radio" name="star" id="star-3"  value="3">
-                    <label class="footer__rating-ratingRow-group-star star" for="star-3" aria-label="Нормально"></label>
-    
-                    <input class="input"  type="radio" name="star" id="star-4"  value="4">
-                    <label class="footer__rating-ratingRow-group-star star" for="star-4" aria-label="Хорошо"></label>
-    
-                    <input class="input"  type="radio" name="star" id="star-5"  value="5" >
-                    <label class="footer__rating-ratingRow-group-star star" for="star-5" aria-label="Отлично"></label>
-                </div>
-            </fieldset>
+                    <input  id="demo-3" type="radio" name="demo" value="3" class="rating-input">
+                    <label for="demo-3" class="rating-label" aria-label="3 stars" title="3 stars"></label>
+                    
+                    <input  id="demo-2" type="radio" name="demo" value="2" class="rating-input">
+                    <label for="demo-2" class="rating-label" aria-label="2 stars" title="2 stars"></label>
+                    <input  id="demo-1" type="radio" name="demo" value="1" class="rating-input">
+                    <label for="demo-1" class="rating-label mar" aria-label="1 star" title="1 star"></label>
+                    Company Rating
+                </fieldset>
+            </form>
             <p class="footer__rating-meta-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
             <div class="footer__rating-meta">
-                <a class="footer__rating-meta-link" href="#">Web Design</a>
-                <p class="footer__rating-meta-text"><span>—</span> Direct Line Development</p>
+                <a class="footer__rating-meta-link" href="#">
+                    <p class="footer__rating-meta-text">Web Design — Direct Line Development</p>
+                </a>
             </div>
         </section>
     </footer>
