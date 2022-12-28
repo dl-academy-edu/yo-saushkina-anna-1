@@ -47,13 +47,12 @@
 /* blog */
 .blog__list {
     flex-wrap: wrap;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 
 .blog__list-post {
     width: 380px;
-    margin-bottom: 13px;
+    margin-bottom: 33px;
 }
 
 /* ___________________________post */
@@ -70,6 +69,7 @@
     padding-top: 15px;
     font-size: 18px;
     line-height: 25px;
+    width: 385px;
 }
 
 .blog__list {

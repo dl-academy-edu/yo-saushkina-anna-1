@@ -1,7 +1,7 @@
-/* breadcrumbs */
 .breadcrumbs {
     margin-top: 60px;
 }
+
 .breadcrumbs__header {
     font-family: 'Montserrat';
     font-style: normal;
@@ -13,6 +13,8 @@
 }
 
 .breadcrumbs__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1180px;
     padding-top: 14px;
@@ -53,7 +55,11 @@
 }
 
 .categoryProducts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .categoryProducts__list-item {
@@ -82,7 +88,8 @@
 
 .adults {
     background-color: #E5EAF8;
-}
+
+}  
 
 .left-line {
     margin-right: 300px;
@@ -92,7 +99,7 @@
 }
 .product-desc {
     max-width: 680px;
-    margin: 56px 0 55px 560px;
+    margin: 53px 0 55px 563px;
 }
 
 .categoryProducts__list-item-text {
@@ -103,12 +110,13 @@
     line-height: 32px;
     text-transform: uppercase;
     color: #FFFFFF;
-    text-shadow: 0px 0px 40px rgb(147 3 3 / 25%);
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    /* max-width: 190px; */
     text-align: center;
     z-index: 2;
 }
@@ -127,7 +135,7 @@
 
     text-transform: uppercase;
     color: #1E0606;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 }
 
 .product-desc__text {

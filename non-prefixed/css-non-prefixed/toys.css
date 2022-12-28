@@ -22,6 +22,7 @@
     color: #1E0606;
 }
 
+
 .options__form fieldset {
     border: none;
     display: flex;
@@ -85,8 +86,12 @@
 /* color  checkbox */
 
 .color {
-    margin-left: 94px;
+    margin-left: 95px;
     padding: 0 0;
+}
+
+.color-head {
+    padding-right: 50px;
 }
 
 .item {
@@ -115,6 +120,7 @@
     border-radius: 2px;
     cursor: pointer; 
     margin-left: -30px;
+    margin-top: 1px;
 }
 
 /*_________________заполненный чекбокс*/
@@ -131,6 +137,7 @@
    background-image: url(../img/icons/checkbox-on.svg); 
 
    left: -30px;
+   top: 3px;
 }
 
 /*Hide the checkmark by default*/
@@ -156,7 +163,7 @@
 
 /* _________________________delivery  */
 .options__delivery {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 23px;
     margin: 0 0;
 }
 

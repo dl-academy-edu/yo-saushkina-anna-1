@@ -73,7 +73,6 @@ img {
 .header__contact {
     display: flex;
     align-items: center;
-    padding-right: 1px;
 }
 
 .header__list-item, .header__contact-link {
@@ -85,6 +84,16 @@ img {
 }
 .header__list-item {
     margin: 10px;
+}
+
+
+.header__contact-search {
+    background: none;
+    border: none;
+    padding: 0;
+    padding-right: 3px;
+    padding-top: 4px;
+ 
 }
 
 .header__contact-search:before {
@@ -157,6 +166,8 @@ img {
     border-bottom: 1px solid #666666;
     padding-bottom: 22px;
     margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .footer__menuColumn-list li {
@@ -344,7 +355,7 @@ label[for]:hover {
     color: #ffffff;
     margin: 0 0;
     margin-left: 45px;
-    padding-bottom: 8px;
+    margin-bottom: 4px;
 
 }
 .footer__rating-meta {
@@ -352,14 +363,11 @@ label[for]:hover {
     margin: 0 0;
     margin-right: 80px;
 }
-.footer__rating-meta-link, 
-.footer__rating-meta-text {
+.footer__rating-meta-link {
    color: #A2A2A2; 
+   margin-bottom: 2px;
 }
 
-.footer__rating-meta-text {
-padding-bottom: 8px;
-}
 
 .footer__rating-meta-link:hover,
 .footer__rating-meta-link:active {
@@ -440,7 +448,7 @@ padding-bottom: 8px;
 }
 
 
-/* ___________________pagination */
+/* ____pagination */
 
 .pagination {
     display: flex;
@@ -504,8 +512,9 @@ padding-bottom: 8px;
 }
 
 .pagination-list li{
-    margin: 0 27px 0;
+    margin: 0 33px 0;
     padding: 0;
+    padding-bottom: 4px;
 }
 
 .pagination-list-item {
@@ -531,7 +540,7 @@ padding-bottom: 8px;
 }
 
 
-/* ________________________ popup */
+/* _____________ popup */
 .contact {
     display: flex;
 }
@@ -584,7 +593,7 @@ padding-bottom: 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    padding-left: 20px;
+    padding-left: 17px;
     color: #1E0606;
 }
 
@@ -619,9 +628,49 @@ padding-bottom: 8px;
     margin-top: 4px;
   }
 
+/* ________________popup disabled */
+
+.checkbox__input[type='checkbox']:checked,
+.checkbox__input[type='checkbox']:not(:checked)
+{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox__input[type='checkbox']:checked + .checkbox__label:after,
+.checkbox__input[type='checkbox']:not(:checked) + .checkbox__label:after 
+{
+    content: '';
+    width: 19px;
+    height: 19px;
+    outline: #C29974 auto 5px;
+    background-color: #fff;
+}
+
+.checkbox__input[type='checkbox']:not(:checked) + .checkbox__label:after {
+    opacity: 0;
+}
+
+.checkbox__input[type='checkbox']:checked + .checkbox__label:after {
+    opacity: 1;
+}
+
+.link-btn:disabled {
+    background-color: #C1C1C1;
+    color: #E1E1E1;
+}
+
+.checkbox__input[type='checkbox']:checked + .checkbox__input[type='checkbox']:not(:checked) + .checkbox__label
+{ 
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1;
+    cursor:pointer;
+}
 
 
-/* _________________empty checkbox */
+/* _____________empty checkbox */
 .checkbox__input[type="checkbox"] {
     opacity: 0;
 }
@@ -632,20 +681,22 @@ padding-bottom: 8px;
 
 .checkbox__label:before {
     position: absolute;
+    margin-top: -2px;
     content: '';
     width: 19px;
     height: 19px;
 
     border: #C29974 2px solid;
-    border-radius: 2px;
+
     cursor: pointer; 
     margin-left: -34px;
+ 
 }
 
 /*_________________full checkbox*/
 .checkbox__label:after{
     position: absolute;
-    content: "";
+    content: '';
 
     height: 19px;
     width: 19px;
@@ -655,6 +706,7 @@ padding-bottom: 8px;
     background-image: url(../img/icons/checkbox-on.svg); 
 
     left: -34px;
+    margin-top: -2px;
 }
 
 .checkbox__label:hover {
@@ -700,17 +752,11 @@ padding-bottom: 8px;
 }
 
 .check {
-    padding: 0 0 20px 17px;
+    padding: 4px 0 20px 34px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.check-text {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.4px;
-    color: #1E0606;
-}
 
 /* breadcrumbs */
 .active-page,
@@ -757,7 +803,7 @@ padding-bottom: 8px;
     height: 12px; 
     color: #1E0606;
     background-repeat: no-repeat;
-    margin-right: 20px;
+    margin-right: 21px;
 }
 
 .catalog {
